@@ -4,7 +4,7 @@ layout: default
 &ensp;C:\Users\{{ site.author }}\{{ site.title }} 的目录<br/><br/>
 
 {% for category in site.categories %}
-&lt;DIR&gt;&ensp;&ensp;&ensp;<a href="{{ site.url }}/{{ category | first }}">{{ category | first }}</a>
+&lt;DIR&gt;&ensp;&ensp;&ensp;&nbsp;<a href="{{ site.url }}/{{ category | first }}">{{ category | first }}</a><br/>
 {% endfor %}
 
-&nbsp;&nbsp;&nbsp;<a href="{{ site.url }}/about.md}">about.md</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.url }}/about.md}">about.md</a>
