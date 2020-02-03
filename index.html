@@ -3,11 +3,8 @@ layout: default
 ---
 &ensp;C:\Users\{{ site.author }}\{{ site.title }} 的目录<br/><br/>
 
-<table>
-  
 {% for category in site.categories %}
-<tr><td>&lt;DIR&gt;&nbsp;&nbsp;&nbsp;</td><td><a href="{{ site.url }}/{{ category | first }}">{{ category | first }}</a></td></tr>
+&lt;DIR&gt;&ensp;&ensp;&ensp;<a href="{{ site.url }}/{{ category | first }}">{{ category | first }}</a>
 {% endfor %}
 
-<tr><td></td><td><a href="{{ site.url }/about.md}">about.md</a></td></tr>
-</table>
+&nbsp;&nbsp;&nbsp;<a href="{{ site.url }/about.md}">about.md</a>
