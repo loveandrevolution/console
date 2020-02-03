@@ -1,8 +1,13 @@
 ---
 layout: default
 ---
-&nbsp;C:\Users\{{ site.author }}\{{ site.title }} 的目录<br/><br/>
+&ensp;C:\Users\{{ site.author }}\{{ site.title }} 的目录<br/><br/>
 
 {% for category in site.categories %}
-&lt;DIR&gt;&nbsp;&nbsp;&nbsp;<a href="{{ site.url }}/{{ category | first }}">{{ category | first }}</a>
+&lt;DIR&gt;&ensp;&ensp;&ensp;<a href="{{ site.url }}/{{ category | first }}">{{ category | first }}</a>
 {% endfor %}
+
+{% for page in site.pages %}
+{
+&nbsp;&nbsp;&nbsp;<a href="{{ site.url }}/{{ page.url }}">{{ page.title }}</a>
+}
