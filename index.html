@@ -2,8 +2,8 @@
 layout: default
 ---
 
-C:\Users\{{ site.autor}}\{{ site.title }}<br/><br/>
+ C:\Users\{{ site.author }}\{{ site.title }} 的目录<br/><br/>
 
-{% for post in site.posts %}
-  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%Y-%m-%d-"}}{{ post.title }}.md</a>
+{% for category in site.categories %}
+&lt;DIR&gt;&nbsp;&nbsp;&nbsp;<a href="{{ site.url }}/{{ category | first }}">{{ category | first }}</a>
 {% endfor %}
