@@ -1,0 +1,10 @@
+---
+layout: default
+---
+&nbsp;C:\Users\{{ site.author }}\{{ site.title }} 的目录<br/><br/>
+
+{% for post in site.categories[page.fl] %}
+  <a href="{{ site.url }}/{{ page.fl }}/{{ post.date | date: '%Y-%m-%d' }}-{{ post.title }}.md">
+    {{ post.date | date: '%Y-%m-%d' }}-{{ post.title }}.md
+  </a>
+{% endfor %}
