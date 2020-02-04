@@ -5,14 +5,14 @@
     <title>{% if page.title != nil %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <style>
       :root {
-        selection-background: #F3F3F3;
+        --selection-background: #F3F3F3;
       }
       body{ background: #0C0C0C; color: #CCC; max-width: 700px; margin: 20px auto; font-family: NSimSun, monospace; padding: 0 20px; word-break: break-all; }
       a{ color: #CCC }
       .cutter{ overflow: hidden; word-break: normal }
       .cutter:after{ content:'----------------------------------------------------------------------------------------'; white-space: nowrap; }
       ::selection {
-        background: var(selection-background); 
+        background: var(--selection-background); 
         color: #333;
       }
     </style>
